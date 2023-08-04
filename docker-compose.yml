@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+      - 48489:48489
+      - 8888:8888
+      - 8080:8080
+      - 8000:8000
+  redis:
+    image: "redis:alpine"
